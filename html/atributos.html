@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <img src="../imagen/imagenhtml.jpg" alt="imgen no disponible">
+
+    <nav>
+        <a href="../index.html">INICIO</a>
+        <a href="etiqueta.html">ETIQUETAS</a>
+        <a href="atributos.html">ATRIBUTOS</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JAVASCRIPT</a>
+        <a href="acercade.html">ACERCADE</a>
+        <a href="contacto.html">CONTACTO</a>
+        <h1>CONTENIDOS</h1>
+    </nav>
+    <br>
+
+    <h2>1.ATRIBUTOS GLOBALES</h2>
+
+    <details>
+        <summary>1.1 ID</summary>
+        <div>
+            <p>Un ID en HTML es un identificador único que se utiliza para identificar un elemento en un documento HTML: 
+                <br>
+                <br>
+                Se utiliza para vincular un elemento con un identificador de fragmento
+                <br>
+                <br> 
+                Se utiliza en scripts
+                <br>
+                <br> 
+                Se utiliza en hojas de estilo (con CSS) 
+                <br>
+                <br>
+                Se utiliza para dar formato a la vista de operador con CSS
+                <br>
+                <br> 
+                Se utiliza para manipular el modelo de objeto de documento con código JavaScript y DHTML
+                <br>
+                <br> 
+                Se utiliza para modificar un elemento específico usando CSS o JavaScript
+                <br>
+                <br> 
+                El valor del atributo id debe ser una cadena de caracteres opaca que no debe repetirse en todo el documento. Además, el valor no debe contener espacios en blanco.
+                <br>
+                <br> 
+                A diferencia del ID, las clases se pueden asignar a varios elementos en una página o en todo el sitio web. 
+        </div>
+    </details>
+
+    <details>
+        <summary>1.2 CLASS</summary>
+        <div>
+            <p>Un class en HTML es un atributo que permite identificar un grupo de elementos HTML con características similares o iguales, como su color. 
+                El atributo class es útil para:
+                Aplicar formato a la vista del operador con CSS 
+                Manipular el modelo de objeto de documento con código JavaScript y DHTML
+                <br>
+                <br> 
+                Agrupar y destinar elementos en función de su propósito, función o apariencia 
+                <br>
+                <br>
+                Para asignar una clase a un elemento HTML, se utiliza el atributo class. El valor del atributo class es una lista de elementos separados por espacios, que debe coincidir con el nombre de clase dado en el selector. Por ejemplo, &lt;p class="intro"&gt;Esta es una introducción.&lt;/p&gt;.
+                <br>
+                <br> 
+                Los nombres de clases pueden contener caracteres ingleses, números, guiones y subrayados, pero el primer carácter no puede ser ni un número ni un guion. Se recomienda utilizar únicamente minúsculas.
+                <br>
+                <br>
+
+                Para aplicar un estilo a los elementos marcados con una clase, se puede usar CSS o JavaScript. Por ejemplo, .intro {font-weight: negrita;} es una regla CSS que pone en negrita el texto de los elementos con la clase "intro".
+        </div>
+    </details>
+
+    <details>
+        <summary>1.3 STYLE</summary>
+        <div>
+            <p>En HTML, el atributo style especifica el valor de CSS que se aplica a un elemento HTML. Se utiliza para dar formato al elemento, como por ejemplo, para establecer su color, fuente o tamaño. 
+                <br>
+                <br>
+                <h2>Para establecer el atributo style en un elemento, se puede utilizar el siguiente código:</h2> 
+                <b>Elemento span:</b> style="font: Verdana; size: 48pt; color: #7f7f7f"
+                <br>
+                <br>
+               <b>Tabla:</b> style="font-family: Verdana; font-size 12pt; color: red"
+               <br>
+               <br>
+                La etiqueta style se integra en el encabezado del documento HTML, antes de los scripts. Se puede insertar cualquier número de elementos style en la sección HEAD.
+                <br>
+                <br> 
+                El objeto style de DOM representa una sentencia de estilo individual. Se puede acceder a él a partir del document o desde el elemento para el cual se aplica el estilo. 
+                <br>
+                <br>
+                El lenguaje de hojas de estilo (CSS) se encarga de la apariencia de las páginas web. Controla los colores, las fuentes y el diseño de los elementos de un sitio web. 
+        </div>
+    </details>
+
+    <h2>2.ATRIBUTOS FORM</h2>
+
+    <details>
+        <summary>2.1 ACTIOM</summary>
+        <div>
+            <p>En HTML, el atributo action del elemento &lt;form&gt; define la ubicación (URL) donde se envían los datos del formulario cuando se valida.
+                <br>
+                <br> 
+                Por ejemplo, en el siguiente código HTML, el formulario envía los datos a la URL /my-handling-form-page utilizando el método post de HTTP:
+                <br>
+                <br>
+                Código:
+                &lt;form action="/my-handling-form-page" method="post"&gt;
+                &lt;/form&gt;
+                <br>
+                <br>
+                Es una práctica estándar establecer siempre al menos los atributos action y method. 
+                <br>
+                <br>
+                Si el campo action está vacío, la página actual se recarga con los parámetros con los datos del formulario. 
+        </div>
+    </details>
+
+    <details>
+        <summary>2.2 METHOD</summary>
+        <div>
+            <p>En HTML, el atributo method define el método HTTP que se utilizará para enviar los datos de un formulario. Los métodos más comunes son get y post: 
+                <br>
+                <br>
+               <b>get:</b> Envía los datos como variables de URL.
+               <br>
+               <br>
+                <b>post:</b> Envía los datos como transacciones HTTP.
+                <br>
+                <br>
+                El atributo method se encuentra dentro de la etiqueta &lt;form&gt;. Los datos del formulario se envían a la página especificada en el atributo action. 
+        </div>
+    </details>
+
+    <details>
+        <summary>2.3 TARGET</summary>
+        <div>
+            <p>El atributo target en HTML es una herramienta que se utiliza para definir dónde se abre un enlace cuando un usuario hace clic en él. Se puede aplicar a las etiquetas A, AREA, BASE, FORM y LINK.
+                <br>
+                <br> 
+                <h2>Los valores que puede tener el atributo target son:</h2> 
+                <b>_blank:</b> Abre el enlace en una nueva ventana o pestaña
+                <br>
+                <br>
+                <b>_self:</b> Abre el enlace en la misma ventana
+                <br>
+                <br>
+                <b>_parent:</b> Abre el enlace en el marco principal
+                <br>
+                <br>
+                El atributo target puede ser útil para mantener a los usuarios en el sitio web, pero también puede ser contraproducente si se usa de forma incorrecta. Por ejemplo, puede dificultar la navegación de algunos grupos de usuarios. Por eso, se recomienda reducir su uso todo lo posible. 
+                <br>
+                <br>
+                En HTML 5, el atributo target volvió a estar permitido, pero se recomienda utilizar el comando target_blank cuando salir de la página actual conlleve una pérdida de datos. 
+        </div>
+    </details>
+
+    <h2>3.ATRIBUTOS INPUNT</h2>
+
+    <details>
+        <summary>3.1 TYPE</summary>
+        <div>
+            <p>En HTML, el atributo type define el tipo de entrada de datos en un campo de formulario. Por ejemplo, se puede usar para crear un campo de texto, un campo de contraseña, un campo de correo electrónico, un campo de número, un campo de fecha, un campo de archivo, un botón, una casilla de verificación, un botón de radio, un área de texto, un campo de teléfono, un campo de color, un campo de rango, o un campo de imagen. 
+                <br>
+                <br>
+                <h2>Tipo de entrada</h2>
+                Texto
+                <br>
+                <br>
+                Correo electrónico
+                <br>
+                <br>
+                Contraseña
+                <br>
+                <br>
+                Número
+                <br>
+                <br>
+                Fecha
+                <br>
+                <br>
+                Archivo
+                <br>
+                <br>
+                Botón
+                <br>
+                <br>
+                Casilla de verificación
+                <br>
+                <br>
+                Botón de radio
+                <br>
+                <br>
+
+                <h2>Descripcion</h2>
+                Crea un campo de entrada de texto simple
+                <br>
+                <br>
+                Valida que el texto ingresado sea una dirección de correo electrónico válida
+                <br>
+                <br>
+                Crea campos de contraseña que ocultan los caracteres escritos
+                <br>
+                <br>
+                Acepta valores numéricos
+                <br>
+                <br>
+                Permite a los usuarios seleccionar fechas en un calendario
+                <br>
+                <br>
+                Permite a los usuarios cargar archivos desde su dispositivo
+                <br>
+                <br>
+                Crea botones interactivos en un formulario
+                <br>
+                <br>
+                Permite a los usuarios seleccionar una o varias opciones de un conjunto de opciones
+                <br>
+                <br>
+                Permite a los usuarios seleccionar una opción de un conjunto de opciones
+                <br>
+                <br>
+                El atributo type también se puede usar para especificar el tipo de medio de Internet (antes conocido como tipo MIME) del documento vinculado. 
+        </div>
+    </details>
+    
+    <details>
+        <summary>3.2 VALUE</summary>
+        <div>
+            <p>El atributo value en HTML es un DOMString que contiene el valor actual del texto ingresado en un campo de texto. También se utiliza para establecer el valor de otros elementos, como botones, opciones, listas, medidores, barras de progreso y parámetros. 
+                <br>
+                <br>
+                <h2>El atributo value tiene las siguientes funciones</h2>
+                Define el valor asociado con una entrada 
+                <br>
+                <br>
+                Define el valor en el par nombre/valor que se envía al servidor al enviar un formulario 
+                <br>
+                <br>
+                Especifica el texto que aparece en un botón 
+                <br>
+                <br>
+                Define los datos que se envían al servidor o a un script cuando se hace clic en un botón 
+                <br>
+                <br>
+                Define el valor predeterminado a ser mostrado al cargar la página 
+                <br>
+                <br>
+                La sintaxis del atributo value para un botón es la siguiente: &lt;botón&gt; value="datos">etiqueta&lt;/botón&gt;. 
+                <br>
+                <br>
+                En esta sintaxis, datos es el valor que se envía al servidor o a un script cuando se hace clic en el botón, y etiqueta es el texto que se muestra en el botón. 
+        </div>
+    </details>
+
+
+
+
+</body>
+</html>

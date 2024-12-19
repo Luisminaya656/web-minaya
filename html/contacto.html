@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
 </head>
+
 <body>
-    
+
     <img src="../imagen/imagenhtml.jpg" alt="imgen no disponible">
     <nav>
         <a href="../index.html">INICIO</a>
@@ -16,26 +18,31 @@
         <a href="javascript.html">JAVASCRIPT</a>
         <a href="acercade.html">ACERCADE</a>
         <a href="contacto.html">CONTACTO</a>
-
-        <h1>ENVIANOS UN MENSAJE Y TE RESPONDEMOS DE INMEDIATO</h1>
     </nav>
+    <form>
 
-    <b>
-        ASUNTO:
-        <input type="text">
-        <br>
-        <br>
-        CORREO:
-        <input type="text">
-        <br>
-        <br>
-        MENSAJE:
-        <input type="text">
+        <fieldset>
+            <legend>ENVIANOS UN MENSAJE Y TE RESPONDEMOS DE INMEDIATO</legend>
+            <b>
+                <label for=""> ASUNTO:</label>
+                <input type="text">
+                <br>
+                <br>
+                <label for="">CORREO</label>
+                <input type="text">
+                <br>
+                <br>
+                <label for="">MENSAJE</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
 
-        <input type="submit" value="Enviar">
-    </b>
+                <input type="submit" value="Enviar">
+            </b>
+        </fieldset>
 
-    </body>
-    </html>
 
-    
+    </form>
+
+
+</body>
+
+</html>
